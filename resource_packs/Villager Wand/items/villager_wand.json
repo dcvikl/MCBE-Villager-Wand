@@ -6,7 +6,7 @@
             "category": "items"
         },
         "components": {
-            "minecraft:icon": "textures/items/villager_wand"
+            "minecraft:icon": "textures/items/villager_wand_ico"
         }
     }
 }

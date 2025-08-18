@@ -4,7 +4,9 @@
         "description": {
             "identifier": "scavengerhr:villager_wand"
         },
+
         "components": {
+            "minecraft:max_stack_size": 1,
             "minecraft:icon": "scavengerhr:villager_wand",
             "minecraft:display_name": {
                 "value": "Villager Wand"
@@ -16,6 +18,11 @@
                     "Commands the will of villagers"
                 ]
             },
+            "minecraft:wearable": {
+                "dispensable": true, 
+                "slot": "slot.weapon.mainhand"        
+            },
+
             "minecraft:on_interact": {
                 "filters": {
                     "test": "is_family",
