@@ -1,9 +1,0 @@
-{
-	"resource_pack_name": "Villager Wand",
-	"texture_name": "atlas.items",
-	"texture_data": {
-		"scavengerhr:villager_wand": {
-			"textures": "textures/items/villager_wand_16"
-		}
-	}
-}

@@ -1,0 +1,29 @@
+{
+    "format_version": "1.20.0",
+    "minecraft:item": {
+        "description": {
+            "identifier": "scavengerhr:villager_wand"
+        },
+        "components": {
+            "minecraft:icon": "scavengerhr:villager_wand",
+            "minecraft:display_name": {
+                "value": "Villager Wand"
+            },
+            "minecraft:glint": true,
+            "minecraft:lore": {
+                "lines": [
+                    "Forged by the White Wizard",
+                    "Commands the will of villagers"
+                ]
+            },
+            "minecraft:on_interact": {
+                "filters": {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "villager"
+                },
+                "event": "villager_wand:open_menu"
+            }
+        }
+    }
+}
