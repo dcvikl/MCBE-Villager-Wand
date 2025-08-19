@@ -1,32 +1,36 @@
 {
-  "format_version": "1.20.0",
-  "minecraft:geometry": [
-    {
-      "description": {
-        "identifier": "geometry.villager_wand",
-        "texture_width": 32,
-        "texture_height": 32
-      },
-      "bones": [
-        {
-          "name": "wand",
-          "pivot": [0, 0, 0],
-          "rotation": [100,0,0],
-          "binding": "q.item_slot_to_bone_name(context.item_slot)",
-          "cubes": [
-            {
-              "origin": [-0.5, 0, -0.5],
-              "size": [1, 12, 1],
-              "uv": [0, 0]
-            },
-            {
-              "origin": [-1, 12, -1],
-              "size": [2, 2, 2],
-              "uv": [16, 0]
-            }
-          ]
-        }
-      ]
-    }
-  ]
+	"format_version": "1.20.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.villager_wand",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "wand",
+					"pivot": [0, 0, 0],
+					"binding": "q.item_slot_to_bone_name(context.item_slot)",
+					"cubes": [
+						{
+							"origin": [-1, 12, -1],
+							"size": [2, 2, 2],
+							"uv": {
+								"north": {"uv": [0.6875, 0.6875], "uv_size": [5.96875, 4.64063]},
+								"east": {"uv": [0.71875, 0.70313], "uv_size": [5.96875, 4.64063]},
+								"south": {"uv": [0.73438, 0.65625], "uv_size": [5.96875, 4.67188]},
+								"west": {"uv": [0.73438, 0.70313], "uv_size": [5.96875, 4.65625]},
+								"up": {"uv": [7.35938, 7.28125], "uv_size": [3.3125, 2.625]},
+								"down": {"uv": [11.95313, 13.26563], "uv_size": [2, -1.95312]}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
 }
